@@ -20,7 +20,7 @@ I am slowly working on pre-release versions, and I can see lots of downloads, te
 ## Table of Contents
 
 - [Features](#features)
-- [Supported cameras](#supported-cameras)
+- [Supported cameras and Firmware Files](#supported-cameras-and-firmware-files)
 - [Getting started](#getting-started)
 - [Unbrick your camera](#unbrick-your-camera)
 - [Acknowledgments](#acknowledgments)
@@ -31,7 +31,6 @@ I am slowly working on pre-release versions, and I can see lots of downloads, te
 This firmware will add the following features:
 
 - **NEW FEATURES**
-  - **NEW CAMERAS SUPPORTED**: Yi Outdoor 1080p and Yi Cloud Dome 1080p.
   - **RTSP server** - which will allow an RTSP stream of the video while keeping the cloud features enabled (available to all and it is free).
   - **MQTT** - detect motion directly from your home server!
   - WebServer - user-friendly stats and configurations.
@@ -51,17 +50,19 @@ This firmware will add the following features:
   - Proxychains-ng - _Disabled by default. Useful if the camera is region-locked._
   - The possibility to disable all the cloud features while keeping the RTSP stream.
 
-## Supported cameras
+## Supported cameras and firmware files
 
 Currently, this project supports the following cameras:
+| Camera | rootfs partition | home partition | Base Firmware | Remarks |
+| --- | --- | --- | --- | ---- |
+| **Yi Home** | rootfs_y18 | home_y18 | 1.8.7.0F_201809191400 | Firmware files required for the Yi Home camera. |
+| **Yi 1080p Home** | rootfs_y20 | home_y20 | 2.1.0.0E_201809191630 | Firmware files required for the Yi 1080p Home camera. |
+| **Yi Dome** | rootfs_v201 | home_v201 | 1.9.1.0J_201809191135 | Firmware files required for the Yi Dome camera. |
+| **Yi 1080p Dome** | rootfs_h20 | home_h20 | 1.9.2.0I_201812141405 | Firmware files required for the Yi 1080p Dome camera. |
+| **Yi 1080p Cloud Dome** | rootfs_y19 | home_y19 | 1.9.3.0E_201812141519 | Firmware files required for the Yi 1080p Cloud Dome camera. |
+| **Yi Outdoor** | rootfs_h30 | home_h30 | 3.0.0.0D_201809111054 | Firmware files required for the Yi Outdoor camera. |
 
-- Yi 1080p Home 48US - confirmed
-- Yi 1080p Home 20US - confirmed
-- Yi Home 17CN / 27US / 47US - confirmed
-- Yi Dome - confirmed, but heavy performance issues with Snapshot and ONVIF are killing the CPU
-- Yi 1080p Dome - confirmed; however, I have no device to test
-- Yi 1080p Cloud Dome - confirmed; however, I have no device to test
-- Yi 1080p Outdoor - confirmed; however, I have no device to test
+A higher base firmware number than listed above means this project does not support your camera.
 
 ## Getting Started
 1. Check that you have a correct Xiaomi Yi camera. (see the section above)
@@ -111,16 +112,7 @@ Alternative way:
 
 3. Get the correct firmware files for your camera from the latest baseline release link: https://github.com/alienatedsec/yi-hack-v5/releases/tag/0.4.1
 
-| Camera | rootfs partition | home partition | Remarks |
-| --- | --- | --- | --- |
-| **Yi Home 17CN / 27US / 47US** | rootfs_y18 | home_y18 | Firmware files required for the Yi Home 17CN / 27US / 47US camera. |
-| **Yi 1080p Home** | rootfs_y20 | home_y20 | Firmware files required for the Yi 1080p Home camera. |
-| **Yi Dome** | rootfs_v201 | home_v201 | Firmware files required for the Yi Dome camera. |
-| **Yi 1080p Dome** | rootfs_h20 | home_h20 | Firmware files required for the Yi 1080p Dome camera. |
-| **Yi 1080p Cloud Dome** | rootfs_y19 | home_y19 | Firmware files required for the Yi 1080p Cloud Dome camera. |
-| **Yi Outdoor** | rootfs_h30 | home_h30 | Firmware files required for the Yi Outdoor camera. |
-
-4. Save both files (rootfs_xx and home_xx), and the `yi-hack-v5` folder on the root path of the microSD card.
+4. Save both files `rootfs_xx` and `home_xx`, and the `yi-hack-v5` folder on the root path of the microSD card.
 
 **_IMPORTANT: Make sure that the filenames stored on the microSD card are correct and didn't get changed. e.g. The firmware filenames for the Yi 1080p Dome camera must be home_h20 and rootfs_h20._**
 
