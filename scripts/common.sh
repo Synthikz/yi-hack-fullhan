@@ -24,14 +24,7 @@
 
 declare -A CAMERAS
 
-CAMERAS["yi_home"]="y18"
-CAMERAS["yi_home_1080p"]="y20"
-
-CAMERAS["yi_dome"]="v201"
-CAMERAS["yi_dome_1080p"]="h20"
-CAMERAS["yi_cloud_dome_1080p"]="y19"
-
-CAMERAS["yi_outdoor"]="h30"
+CAMERAS["b221fp"]="b221fp"
 
 ###############################################################################
 # Common functions
