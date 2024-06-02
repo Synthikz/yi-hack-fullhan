@@ -10,7 +10,7 @@
     </a>
 </p>
 
-## Why this `YI-HACK-V5` firmware?
+## Why this `YI-hack-fullhan-V1` firmware?
 
 The answer is simple: missing updates, RTSP, and not based on the latest stock firmware (which features improvements and new cool stuff).
 Besides, there were no updates to `yi-hack-v4`, and I am against that RTSP licensing model. I have contributed enough and will continue my work separately.
