@@ -1,5 +1,5 @@
 <p align="center">
-    <img height="200" src="https://raw.githubusercontent.com/alienatedsec/yi-hack-v5/master/imgs/yi-hack-v5-header.png">
+    <img height="200" src="https://raw.githubusercontent.com/alienatedsec/yi-hack-v5/master/imgs/yi-hack-v1-header.png">
 </p>
 <p align="center">
     <a target="_blank" href="https://discord.gg/bsKncwvRU7">
