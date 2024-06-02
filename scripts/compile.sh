@@ -76,13 +76,13 @@ source "$(get_script_dir)/common.sh"
 
 echo ""
 echo "------------------------------------------------------------------------"
-echo " YI-HACK-V5 - SRC COMPILER"
+echo " YI-HACK-FULLHAN-V1 - SRC COMPILER"
 echo "------------------------------------------------------------------------"
 echo ""
 
 # this is needed because with sudo the PATH apparently doesn't contain it. Idk why
 # Hisilicon Linux, Cross-Toolchain PATH
-export PATH="/opt/arm-hisiv300-linux/bin:$PATH"
+export PATH="/opt/arm-v6l-linux/bin:$PATH"
 
 rm -rf "$(get_script_dir)/../build/"
 
