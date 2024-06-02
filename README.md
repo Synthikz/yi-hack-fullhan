@@ -5,8 +5,8 @@
     <a target="_blank" href="https://discord.gg/bsKncwvRU7">
         <img src="https://img.shields.io/discord/825822449449828414?logo=discord" alt="Official Discord Server">
     </a>
-    <a target="_blank" href="https://github.com/alienatedsec/yi-hack-v5/releases">
-        <img src="https://img.shields.io/github/downloads/alienatedsec/yi-hack-v5/total.svg" alt="Releases Downloads">
+    <a target="_blank" href="https://github.com/alienatedsec/yi-hack-v1/releases">
+        <img src="https://img.shields.io/github/downloads/alienatedsec/yi-hack-v1/total.svg" alt="Releases Downloads">
     </a>
 </p>
 
